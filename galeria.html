@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Galería | Oasis Tours</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="header__navegacion">
+                <a class="header__logo no-margin" href="index.html">
+                    <img class="no-margin oasis__logo" src="image/logo.png" alt="Oasis Tours">
+                </a>
+                <nav class="barra__navegacion" aria-label="Navegación principal">
+                    <a href="alojamiento.html" class="barra__enlace">Alojamiento</a>
+                    <a href="servicios.html" class="barra__enlace">Servicios</a>
+                    <a href="tours.html" class="barra__enlace">Tours</a>
+                    <a href="contacto.html" class="barra__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h1 class="no-margin frase__header">Galería Oasis Tours</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="galeria" aria-labelledby="titulo-galeria">
+            <div class="contenedor">
+                <div class="galeria__encabezado">
+                    <p class="galeria__etiqueta">Momentos Oasis</p>
+                    <h2 id="titulo-galeria">Conoce nuestras instalaciones</h2>
+                    <p>Explora algunos de los espacios, paisajes y aventuras que te esperan.</p>
+                </div>
+
+                <div class="galeria__grid">
+                    <button class="galeria__item galeria__item--grande" type="button" data-galeria-imagen="image/galeria.jpg" data-galeria-alt="Vista de las instalaciones de Oasis Tours">
+                        <img src="image/galeria.jpg" alt="Vista de las instalaciones de Oasis Tours">
+                        <span>Instalaciones</span>
+                    </button>
+                    <button class="galeria__item" type="button" data-galeria-imagen="image/alojamiento.jpg" data-galeria-alt="Alojamiento rodeado de naturaleza">
+                        <img src="image/alojamiento.jpg" alt="Alojamiento rodeado de naturaleza">
+                        <span>Alojamiento</span>
+                    </button>
+                    <button class="galeria__item" type="button" data-galeria-imagen="image/tirolinas.jpg" data-galeria-alt="Aventura en tirolina">
+                        <img src="image/tirolinas.jpg" alt="Aventura en tirolina">
+                        <span>Aventura</span>
+                    </button>
+                    <button class="galeria__item" type="button" data-galeria-imagen="image/tours.jpg" data-galeria-alt="Tour por paisajes naturales">
+                        <img src="image/tours.jpg" alt="Tour por paisajes naturales">
+                        <span>Tours</span>
+                    </button>
+                    <button class="galeria__item" type="button" data-galeria-imagen="image/experiencias.jpg" data-galeria-alt="Experiencias para compartir">
+                        <img src="image/experiencias.jpg" alt="Experiencias para compartir">
+                        <span>Experiencias</span>
+                    </button>
+                    <button class="galeria__item" type="button" data-galeria-imagen="image/servicios.jpg" data-galeria-alt="Servicios de Oasis Tours">
+                        <img src="image/servicios.jpg" alt="Servicios de Oasis Tours">
+                        <span>Servicios</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <img class="logo__oasis" src="image/logo.png" alt="Oasis Tours">
+        </div>
+        <div class="footer__fondo">
+            <div class="footer__logos"><img class="footer__whatssap" src="image/logo_whatssapp.png" alt="WhatsApp"><p>77039699</p></div>
+            <div class="footer__logos"><img class="footer__whatssap" src="image/logo__tiktok.png" alt="TikTok"><p>Oasis Tours!</p></div>
+            <div class="footer__logos"><img class="footer__whatssap" src="image/insta__logo.png" alt="Instagram"><p>Oasis__Tours!</p></div>
+            <div class="footer__logos"><img class="footer__whatssap" src="image/facebook__logo.png" alt="Facebook"><p>Oasis__Tours!</p></div>
+        </div>
+    </footer>
+    <script src="js/galeria.js"></script>
+</body>
+
+</html>
