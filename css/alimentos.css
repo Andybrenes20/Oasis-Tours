@@ -1,0 +1,193 @@
+.alimentos-header {
+    min-height: 50rem;
+    background-image: linear-gradient(to bottom, rgba(7, 47, 35, .76), rgba(0, 0, 0, .62)), url('../image/gastronomia-desayuno.png');
+}
+
+.alimentos-header__texto {
+    max-width: 88rem;
+    margin: 0 auto;
+    padding: 8rem 2rem 4rem;
+}
+
+.alimentos-header__texto h1 { font-family: var(--fuenteHeading); font-size: clamp(4rem, 7vw, 6.4rem); line-height: 1.05; }
+.alimentos-header__texto > p:last-child { max-width: 62rem; margin: 1.8rem auto 0; font-size: 1.9rem; line-height: 1.55; }
+.alimentos-header__eyebrow, .alimentos-etiqueta { margin: 0; color: #0d9488; font-size: 1.3rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.alimentos-header__eyebrow { color: #b8f3d6; margin-bottom: 1.2rem; }
+
+.alimentos-intro { display: grid; gap: 2rem; padding: 7rem 0; align-items: center; }
+.alimentos-intro h2, .alimentos-section-title h2, .alimentos-cta h2 { margin: .5rem 0 0; color: #0f172a; font-size: clamp(3rem, 5vw, 4.2rem); line-height: 1.12; }
+.alimentos-intro > p { margin: 0; color: #475569; font-size: 1.8rem; line-height: 1.75; }
+
+.galeria-gastronomica { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 17rem; gap: 1.4rem; padding-bottom: 7rem; }
+.galeria-gastronomica__foto { position: relative; margin: 0; overflow: hidden; border-radius: 1.2rem; background: #134e4a; }
+.galeria-gastronomica__foto--grande { grid-column: span 2; grid-row: span 2; }
+.galeria-gastronomica__foto img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.galeria-gastronomica__foto::after { position: absolute; inset: 45% 0 0; content: ''; background: linear-gradient(transparent, rgba(0, 0, 0, .76)); pointer-events: none; }
+.galeria-gastronomica__foto figcaption { position: absolute; z-index: 1; right: 1.5rem; bottom: 1.2rem; left: 1.5rem; color: #fff; font-size: 1.4rem; font-weight: 700; line-height: 1.35; }
+.galeria-gastronomica__foto:hover img { transform: scale(1.05); }
+
+.menu-section { padding: 6rem 0 7rem; background: #f0fdf4; }
+.alimentos-section-title { margin-bottom: 3.8rem; text-align: center; }
+.menu-grid { display: grid; gap: 2rem; }
+.menu-card { position: relative; padding: 3.2rem 2.6rem; border: 1px solid #d1fae5; border-radius: 1.4rem; background: #fff; box-shadow: 0 1.2rem 3rem rgba(15, 118, 110, .08); }
+.menu-card--featured { border: 2px solid #0d9488; transform: translateY(-.5rem); }
+.menu-card__badge { position: absolute; top: -1.4rem; left: 50%; padding: .5rem 1.4rem; border-radius: 2rem; background: #0d9488; color: white; font-size: 1.25rem; font-weight: 700; transform: translateX(-50%); white-space: nowrap; }
+.menu-card__icon { display: grid; place-items: center; width: 5.6rem; height: 5.6rem; margin-bottom: 1.5rem; border-radius: 50%; background: #dcfce7; font-size: 2.7rem; }
+.menu-card h3 { margin: 0; color: #0f172a; font-size: 2.6rem; line-height: 1.2; }
+.menu-card__horario { margin: .7rem 0 1.7rem; color: #0f766e; font-size: 1.35rem; font-weight: 700; }
+.menu-card ul { display: grid; gap: 1.2rem; margin: 0; padding: 1.7rem 0 0; list-style: none; border-top: 1px solid #d1fae5; }
+.menu-card li span, .menu-card li strong { display: block; }
+.menu-card li span { color: #1e293b; font-weight: 700; line-height: 1.35; }
+.menu-card li strong { margin-top: .15rem; color: #64748b; font-size: 1.35rem; font-weight: 400; line-height: 1.4; }
+
+.alimentos-beneficios { display: grid; gap: 2rem; padding: 7rem 0; }
+.alimentos-beneficios article { display: flex; gap: 1.6rem; align-items: flex-start; }
+.alimentos-beneficios article > span { display: grid; flex: 0 0 5.4rem; place-items: center; width: 5.4rem; height: 5.4rem; border-radius: 50%; background: #ecfdf5; font-size: 2.5rem; }
+.alimentos-beneficios h3 { margin: 0 0 .4rem; color: #0f172a; font-size: 2.1rem; line-height: 1.2; }
+.alimentos-beneficios p { margin: 0; color: #64748b; font-size: 1.5rem; line-height: 1.55; }
+
+.alimentos-cta { padding: 7rem 0; background: #134e4a; color: white; text-align: center; }
+.alimentos-cta h2 { color: white; }
+.alimentos-cta > .contenedor > p:not(.alimentos-etiqueta) { max-width: 62rem; margin: 1.5rem auto 2.8rem; font-size: 1.8rem; line-height: 1.65; }
+.alimentos-cta .alimentos-etiqueta { color: #99f6e4; }
+.alimentos-boton { display: inline-block; padding: 1.2rem 2.4rem; border-radius: .8rem; background: #fff; color: #115e59; font-weight: 700; transition: transform .2s ease, background-color .2s ease; }
+.alimentos-boton:hover { background: #ccfbf1; transform: translateY(-.2rem); }
+
+@media (min-width: 768px) {
+    .alimentos-header__texto { padding-top: 8rem; }
+    .alimentos-intro { grid-template-columns: 1fr 1fr; gap: 7rem; }
+    .galeria-gastronomica { grid-template-columns: 2fr 1fr 1fr; grid-template-rows: repeat(2, 20rem); }
+    .galeria-gastronomica__foto--grande { grid-column: span 1; grid-row: span 2; }
+    .menu-grid { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
+    .alimentos-beneficios { grid-template-columns: repeat(3, 1fr); gap: 4rem; }
+}
+
+@media (max-width: 767px) {
+    .alimentos-header {
+        min-height: 54rem;
+        background-position: 58% center;
+    }
+
+    .alimentos-header .header__navegacion {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .alimentos-header .barra__navegacion {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: 38rem;
+        gap: .3rem .5rem;
+    }
+
+    .alimentos-header .barra__enlace {
+        font-size: 1.55rem;
+        white-space: nowrap;
+    }
+
+    .alimentos-header__texto {
+        padding: 6.5rem 2rem 4rem;
+    }
+
+    .alimentos-header__texto h1 {
+        font-size: clamp(3.6rem, 10.5vw, 4.6rem);
+    }
+
+    .alimentos-header__texto > p:last-child {
+        font-size: 1.65rem;
+    }
+
+    .alimentos-intro {
+        padding: 4.5rem 0 3.5rem;
+    }
+
+    .alimentos-intro h2,
+    .alimentos-section-title h2,
+    .alimentos-cta h2 {
+        font-size: 3rem;
+    }
+
+    .alimentos-intro > p {
+        font-size: 1.65rem;
+        line-height: 1.65;
+    }
+
+    .galeria-gastronomica {
+        grid-auto-rows: 14rem;
+        gap: 1rem;
+        padding-bottom: 4.5rem;
+    }
+
+    .galeria-gastronomica__foto--grande {
+        min-height: 25rem;
+    }
+
+    .galeria-gastronomica__foto figcaption {
+        right: 1rem;
+        bottom: .9rem;
+        left: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .menu-section {
+        padding: 4.5rem 0;
+    }
+
+    .alimentos-section-title {
+        margin-bottom: 3.2rem;
+    }
+
+    .menu-grid {
+        gap: 3.2rem;
+    }
+
+    .menu-card {
+        padding: 2.7rem 2rem;
+    }
+
+    .menu-card--featured {
+        transform: none;
+    }
+
+    .menu-card__icon {
+        width: 5rem;
+        height: 5rem;
+        font-size: 2.4rem;
+    }
+
+    .alimentos-beneficios {
+        gap: 2.6rem;
+        padding: 4.5rem 0;
+    }
+
+    .alimentos-beneficios article > span {
+        flex-basis: 4.6rem;
+        width: 4.6rem;
+        height: 4.6rem;
+        font-size: 2.15rem;
+    }
+
+    .alimentos-cta {
+        padding: 5rem 0;
+    }
+
+    .alimentos-cta > .contenedor > p:not(.alimentos-etiqueta) {
+        font-size: 1.65rem;
+    }
+
+    .alimentos-boton {
+        width: 100%;
+        max-width: 32rem;
+        padding: 1.45rem 2rem;
+        font-size: 1.65rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .alimentos-header .barra__navegacion {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .alimentos-header__texto {
+        padding-top: 5.2rem;
+    }
+}
