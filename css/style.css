@@ -687,3 +687,143 @@ p {
         height: 3.2rem;
     }
 }
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .contenedor {
+        width: min(100% - 3.2rem, 120rem);
+    }
+
+    .header {
+        height: auto;
+        min-height: 48rem;
+    }
+
+    .header__navegacion {
+        padding-top: 1.6rem;
+    }
+
+    .header__logo {
+        max-width: 11rem;
+    }
+
+    .barra__navegacion {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: .4rem 1.2rem;
+        margin: 1rem auto 0;
+        max-width: 34rem;
+    }
+
+    .barra__enlace {
+        padding: .6rem .2rem;
+        font-size: 1.8rem;
+        line-height: 1.35;
+    }
+
+    .header__texto {
+        padding: 8rem 1.6rem 5rem;
+    }
+
+    .frase__header {
+        font-size: clamp(3.2rem, 10vw, 4.2rem);
+        line-height: 1.12;
+    }
+
+    .principal__opciones {
+        grid-template-columns: 1fr;
+    }
+
+    .opciones__image {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .alojamiento-container,
+    .tours-container,
+    .servicios-container,
+    .contacto-container {
+        padding: 4rem 0;
+    }
+
+    .section-title,
+    .tours-container .section-title,
+    .servicios-container .section-title,
+    .contacto-container .section-title {
+        margin-bottom: 3rem;
+    }
+
+    .section-title h2,
+    .tours-container .section-title h2,
+    .servicios-container .section-title h2,
+    .contacto-container .section-title h2 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+
+    .section-title p,
+    .tours-container .section-title p,
+    .servicios-container .section-title p,
+    .contacto-container .section-title p {
+        font-size: 1.7rem;
+        line-height: 1.65;
+    }
+
+    .cards-grid,
+    .tours-container .cards-grid,
+    .servicios-grid,
+    .contacto-wrapper {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .cards-grid,
+    .tours-container .cards-grid,
+    .servicios-grid {
+        gap: 2rem;
+    }
+
+    .contacto-wrapper {
+        gap: 3rem;
+        padding: 2.4rem;
+        border-radius: 1.2rem;
+    }
+
+    .contacto-info > p {
+        margin-bottom: 2.4rem;
+    }
+
+    .info-list {
+        gap: 1.6rem;
+        padding-left: 0;
+    }
+
+    .info-list li {
+        gap: 1.2rem;
+    }
+
+    .info-list li > div {
+        min-width: 0;
+    }
+
+    .info-list p {
+        overflow-wrap: anywhere;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        min-width: 0;
+    }
+
+    .card-content {
+        padding: 2rem;
+    }
+
+    .card-features {
+        gap: .8rem;
+    }
+}
